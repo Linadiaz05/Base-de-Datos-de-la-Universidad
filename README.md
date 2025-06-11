@@ -59,4 +59,36 @@ La base de datos contiene las siguientes tablas:
 - **Llaves foráneas**:
   - `id_Alumno` → `Alumnos.id_Alumno`
   - `id_Asignatura` → `Asignaturas.id_Asignatura`
-- **Descripción**: Registro de matrículas de los estudia
+- **Descripción**: Registro de matrículas de los estudiantes en asignaturas, incluyendo nota final y semestre.
+
+---
+
+## 🔗 Relaciones Clave
+
+- **Un Alumno** pertenece a **un Programa Académico** y tiene **un Estado**.
+- **Un Profesor** pertenece a **una Facultad**.
+- **Un Administrativo** trabaja en **una Facultad**.
+- **Una Asignatura** puede ser dictada por **varios Profesores**, y un Profesor puede dictar **varias Asignaturas** (`Asignaturas_Profesores`).
+- **Un Estudiante** puede matricularse en **varias Asignaturas**, y una Asignatura puede tener **muchos Estudiantes** (`Matricula_Estudiante`).
+
+---
+
+## 🚀 Cómo usar
+
+1. Importa el archivo SQL en tu gestor de base de datos MySQL/MariaDB.
+2. Explora las tablas y relaciones usando consultas SQL.
+3. Puedes usar herramientas como **MySQL Workbench**, **DBeaver** o **phpMyAdmin** para visualizar gráficamente las relaciones.
+
+---
+
+## ✍️ Autor
+
+Proyecto académico: **Proyecto Lina**  
+Desarrollado con 💙 en MySQL
+
+---
+
+## 🗃️ Licencia
+
+MIT © [Tu Nombre o Institución]
+
